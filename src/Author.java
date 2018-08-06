@@ -9,7 +9,7 @@ public class Author extends Person {
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
-        books = new ArrayList();
+        books = new ArrayList<>();
     }
 
     /**
@@ -28,8 +28,8 @@ public class Author extends Person {
         books.add(book);
     }
 
-    @Override
-    public String sortName() {
+
+    public String fulltName() {
         return String.format("%s, %s", lastName, firstName);
     }
 }
